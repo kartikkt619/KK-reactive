@@ -2,6 +2,7 @@ import React from 'react'
 import RootLayout from '../../../layout/RootLayout'
 import { motion } from 'framer-motion'
 import TopSearchCard from '../../../components/topsearch/TopSearchCard'
+import { Link } from 'react-router-dom'
 
 const TopSearch = () => {
   return (
@@ -22,12 +23,12 @@ const TopSearch = () => {
         {/* Top Search Tickets routes Card */}
         <div className="w-full grid grid-cols-3 gap-5">
 
-            <TopSearchCard routeFrom={"Amritsar"} routeTo={"Delhi"} timeDuration={"8 Hrs"} price={"1500"}/>
-            <TopSearchCard routeFrom={"Amritsar"} routeTo={"Himachal"} timeDuration={"7 Hrs"} price={"1200"}/>
-            <TopSearchCard routeFrom={"Amritsar"} routeTo={"Harayana"} timeDuration={"9 Hrs"} price={"2000"}/>
-            <TopSearchCard routeFrom={"Chandigardh"} routeTo={"Delhi"} timeDuration={"4 Hrs"} price={"1000"}/>
-            <TopSearchCard routeFrom={"Jammu"} routeTo={"Punjab"} timeDuration={"10 Hrs"} price={"2200"}/>
-            <TopSearchCard routeFrom={"Nangal"} routeTo={"Punjab"} timeDuration={"6 Hrs"} price={"1800"}/>
+            <Link to={"/bus-tickets/detail"}><TopSearchCard routeFrom={"Amritsar"} routeTo={"Delhi"} timeDuration={"8 Hrs"} price={"1500"}/></Link>
+            <Link to={"/bus-tickets/detail"}><TopSearchCard routeFrom={"Amritsar"} routeTo={"Himachal"} timeDuration={"7 Hrs"} price={"1200"}/></Link>
+            <Link to={"/bus-tickets/detail"}><TopSearchCard routeFrom={"Amritsar"} routeTo={"Chandigardh"} timeDuration={"6 Hrs"} price={"2000"}/></Link>
+            <Link to={"/bus-tickets/detail"}><TopSearchCard routeFrom={"Chandigardh"} routeTo={"Delhi"} timeDuration={"4 Hrs"} price={"1000"}/></Link>
+            <Link to={"/bus-tickets/detail"}><TopSearchCard routeFrom={"Jammu"} routeTo={"Jalandhar"} timeDuration={"10 Hrs"} price={"2200"}/></Link>
+            <Link to={"/bus-tickets/detail"}><TopSearchCard routeFrom={"Nangal"} routeTo={"Ludhiana"} timeDuration={"9 Hrs"} price={"1800"}/></Link>
         </div>
       
     </RootLayout>

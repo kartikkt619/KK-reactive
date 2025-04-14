@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { TbArrowsExchange } from 'react-icons/tb';
 import { FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Search = () => {
   return (
@@ -54,7 +55,7 @@ const Search = () => {
                 {/* search button */}
                 <button className="w-fit px-5 h-full bg-red-500 hover:bg-transparent border-2 border-red-500 hover:border-red-500 rounded-xl text-base font-medium text-neutral-50 flex items-center justify-center gap-x-2 hover:text-red-500 ease-in-out duration-300">
                     <FaSearch />
-                    Search
+                   <Link to={"/bus-tickets"}> Search</Link>
                 </button>
             </div>
 

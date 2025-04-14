@@ -5,6 +5,8 @@ import RootLayout from '../../layout/RootLayout'
 import { motion } from 'framer-motion';
 import Search from '../home/hero/search/Search';
 import Filter from './filter/Filter';
+import SearchResult from './searchresult/SearchResult';
+import { Link } from 'react-router-dom';
 
 const Ticket = () => {
   return (
@@ -44,6 +46,7 @@ const Ticket = () => {
 
 
                 {/* Search tickets */}
+                <SearchResult />
                 
             </div>
 
